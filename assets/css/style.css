@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Utility */
+.flex{
+    display: flex;
+}
+.space-between{
+    justify-content: space-between;
+}
+.width
+
+/* Header */
+header{
+    width: 100%;
+    height: 50px;
+    background-color: #0084FD;
+    color: white;
+}
+header div{
+    width: 80%;
+}
