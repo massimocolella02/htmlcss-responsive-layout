@@ -7,17 +7,14 @@
     font-family: 'Encode Sans', sans-serif;
 }
 /* Utility */
-.flex{
-    display: flex;
+.text-center{
+    text-align: center;
 }
-.space-between{
-    justify-content: space-between;
+.block{
+    display: block;
 }
-.column{
-    flex-direction: column;
-}
-.contents{
-    display: contents;
+.inline-block{
+    display: inline-block;
 }
 .blu{
     color: #0084FD;
@@ -28,138 +25,67 @@
 .lilla{
     color: #9792E4;
 }
-.margin-bottom{
-    margin-bottom: 15px;
-}
-.margin-bottom30{
-    margin-bottom: 30px;
-}
-.center{
-    align-self: center;
-}
-.relative{
-    position: relative;
+.apple-button{
+    background-color: #0084FD;
+    color: white;
+    padding: 0.8rem 2rem;
+    border-radius: 1.5rem;
+    text-decoration: none;
 }
 /* Header */
 header{
-    width: 100%;
     background-color: #0084FD;
     color: white;
 }
-header div{
-    width: 90%;
-    margin: 0 auto;
-    padding: 10px;
+header > div{
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 0.5rem 0;
 }
 /* Main */
 
 /* Sezione 1 */
 .container{
-    width: 80%;
+    max-width: 80%;
     margin: 0 auto;
 }
-#sezione1 > div > div:first-child{
-    margin: 0 auto;
+#sezione1 .container div{
     background-color: #B5DDFF;
-    border: 1px solid #B5DDFF;
-    border-radius: 30px;
-    padding: 30px;
+    margin: 1.5rem 0;
+    padding: 2rem;
+    border-radius: 2rem;
+}
+#sezione1 .container div:first-child{
     padding-bottom: 0;
-    margin-top: 50px;
 }
-#sezione1 > div > div:first-child a{
-    background-color: #0084FD;
-    width: max-content;
-    padding: 5px 30px;
-    border: 1px solid #0084FD;
-    border-radius: 15px;
-    color: white;
-    text-decoration: none;
-    display: block;
-}
-
-#sezione1 > div > div:nth-child(2){
-    margin: 0 auto;
-    background-color: #B5DDFF;
-    border: 1px solid #B5DDFF;
-    border-radius: 30px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 30px;
-    padding-bottom: 0;
-    margin-top: 50px;
-}
-#sezione1 > div > div:nth-child(2) i{
-    font-size: 60px;
-}
-
-#sezione1 > div > div:nth-child(3){
-    margin: 0 auto;
-    background-color: #B5DDFF;
-    border: 1px solid #B5DDFF;
-    border-radius: 30px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 30px;
-    padding-bottom: 0;
-    margin-top: 50px;
-}
-#sezione1 > div > div:nth-child(3) i{
-    font-size: 60px;
-}
-
-#sezione1 > div > div:nth-child(4){
-    margin: 0 auto;
-    background-color: #B5DDFF;
-    border: 1px solid #B5DDFF;
-    border-radius: 30px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 30px;
-    padding-bottom: 0;
-    margin-top: 50px;
-}
-#sezione1 > div > div:nth-child(4) i{
-    font-size: 60px;
-}
-
-#sezione1 > div > div:last-child{
-    margin: 0 auto;
-    background-color: #B5DDFF;
-    border: 1px solid #B5DDFF;
-    border-radius: 30px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 30px;
-    padding-bottom: 0;
-    margin-top: 50px;
-}
-#sezione1 > div > div:last-child i{
-    font-size: 60px;
-}
-
-@media screen and (min-width: 480px){
-    
+@media only screen and (min-width: 480px) {
     #sezione1 .container{
-        width: 80%;
-        margin: 0 auto;
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
         flex-wrap: wrap;
+        justify-content: space-between;
     }
-    .div-grande{
-        width: 65%;
+    #sezione1 .container div{
+        max-width: calc((100% / 3) - 2%);
+        margin: 1rem 0;
     }
-    .div-piccolo{
-        width: 30%;
+    #sezione1 .container div:first-child{
+        max-width: calc((100% / 3) * 2 - 1%);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    #sezione1 .container div:first-child img{
+        width: 70%;
+    }
+    .apple-button{
+        width: 70%;
+        text-align: center;
     }
 }
+
 /* Sezione 2 */
 #sezione2{
     background-color: #9792E4;
